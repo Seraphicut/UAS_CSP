@@ -1,0 +1,383 @@
+    /* General Styles */
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #d7e6f8;
+        line-height: 1.6;
+    }
+
+    header {
+        background: url('header.jpg') no-repeat center center/cover;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        top: 0;
+        z-index: 900;
+        padding: 15px;}
+
+            /* Sticky Section Headers */
+    section {
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+    section h2 {
+        position: sticky;
+        top: 0;
+        background-color: #def5f4; /* Sama dengan warna background */
+        padding: 2px;
+        z-index: 100;
+        border-bottom: 2px solid #ccc; /* Garis bawah untuk estetik */
+        text-align: center
+    }
+
+
+    header h1 {
+        font-family: 'Sacramento', cursive;
+        font-size: 3rem;
+        margin: 0;
+        color: #ffffff;
+    }
+
+    header p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-family: 'Sacramento', cursive;
+        font-size: 2.5rem;
+        color: #093364;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        color: #333333;
+    }
+
+        /* Drop Cap Styles */
+        .overflow-container p {
+        text-align: justify;
+        font-size: 16px;
+        line-height: 1.6;
+        position: relative;
+    }
+
+    .overflow-container p:first-letter {
+        font-family: 'Sacramento', cursive;
+        font-size: 3.5rem;
+        font-weight: bold;
+        float: left;
+        margin-right: 10px;
+        line-height: 1;
+        color: #553dc0;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;}      
+
+    /* Sticky Navigation */
+    nav {
+        position: sticky;
+        top: 0;
+        background-color: #4caf50;
+        z-index: 1000;
+    }
+    nav table {
+        width: 90%;
+        table-layout: fixed;
+    }
+    nav a {
+        color: white;
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+    }
+    nav a:hover {
+        background-color: #3e8e41;
+    }
+
+    /* Gallery Styles */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 20px;
+        margin: 20px 0;
+    }
+    .gallery-item {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+        background-color: #ffffff;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .gallery-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Schedule and Form Styles */
+    .schedule {
+        margin: 20px 0;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ddd;
+    }
+    
+    .form-container {
+        margin: 20px 0;
+        background-color: #ffffff;
+        padding: 20px;
+        border: 1px solid #ddd;
+    }
+    .form-container input, .form-container textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .form-container button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+    .form-container button:hover {
+        background-color: #45a049;
+    }
+
+    /* Testimonial Styles */
+    .testimonial {
+        margin: 20px 0;
+        background-color: #fffde7;
+        padding: 20px;
+        border: 1px solid #ddd;
+    }
+    .testimonial img {
+        max-width: 100px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+    .testimonial p {
+        display: inline;
+    }
+
+    /* Pricing and Terms */
+    .pricing {
+        margin: 20px 0;
+        background-color: #e3f2fd;
+        padding: 20px;
+        border: 1px solid #bbdefb;
+    }
+        /* Fixed WhatsApp Button */
+.fixed-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+}
+    .fixed-box i {
+    font-size: 24px;
+}
+    .fixed-box:hover {
+    background-color: #1ebe57;
+}
+
+.overflow-container {
+    max-height: 250px; /* Atur tinggi maksimal kontainer */
+    max-width: 900px;
+    overflow-y: auto; /* Aktifkan scroll vertikal jika konten terlalu panjang */
+    padding: 10px;
+    background-color: #d5f8ed;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Fixed Footer Styles */
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background-color: #ddd3f5;
+    text-align: center;
+    padding: 1px 3px; /* Padding lebih kecil agar footer lebih tipis */
+    border-top: 1px solid #ccc;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.1); /* Shadow lebih halus */
+    z-index: 1000;
+    font-size: 12px; /* Ukuran font tetap kecil */
+    color: #c6bcf3;
+    line-height: 1.5; /* Spasi antar teks yang nyaman */
+}
+
+.schedule-item {
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.schedule-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f0f8ff; /* Warna lebih cerah saat hover */
+}
+.schedule-item p {
+    margin: 5px 0;
+}
+
+/* Center and scrollable container */
+.terms-container {
+    max-width: 90%;
+    height: 400px; /* Adjust height as needed */
+    overflow-y: scroll;
+    margin: 50px auto; /* Center horizontally */
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Scrollbar styling */
+.terms-container::-webkit-scrollbar {
+    width: 12px;
+}
+
+.terms-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+.terms-container::-webkit-scrollbar-thumb:hover {
+    background: #bbb;
+}
+
+/* Content inside the container */
+.terms-container h2 {
+    text-align: center;
+    color: #7a221f;
+    margin-bottom: 20px;
+}
+
+.terms-container ol {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.terms-container li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.terms-container strong {
+    color: #5235a3;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin-bottom: 60px; /* To ensure footer does not overlap content */
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+}
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+  font-weight: bold;
+}
+#categories {
+  margin: 20px 0;
+}
+#categories h2 {
+  text-align: center;
+  font-family: 'Georgia', serif;
+  margin-bottom: 15px;
+}
+#categories .card {
+  transition: transform 0.3s ease;
+}
+#categories .card:hover {
+  transform: scale(1.05);
+}
+#categories .price {
+  color: #007bff;
+  cursor: pointer;
+}
+#categories .price:hover {
+  text-decoration: underline;
+}
+#form-section {
+  padding: 40px 20px;
+}
+footer {
+  background: #333;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.whatsapp-icon {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 1100;
+  }
+  .whatsapp-icon img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
